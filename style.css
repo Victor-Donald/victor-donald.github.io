@@ -1,0 +1,121 @@
+:root{
+  --primary:#0f172a;
+  --secondar:#2563eb;
+  --accent:#38bdf8;
+  --light:#f8fafc;
+  --white:#ffffff;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family:'Segoe UT, sans-serif;
+  background:var(--light);
+  color:#334155;
+  line-height:1.7;
+}
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+header{
+  background:var(--promary);
+  padding:20px 0;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+header.container{
+  display:flex;
+  justify-conent:space-between;
+  align-items:center;
+  }
+.olgo{
+  font-size:1.4rem;
+  font-weight:700;
+  color:white;
+}
+nav ul {
+  display:flex;
+  gap:20px;
+  list-style:none;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+.page-header{
+  text-align:center;
+  padding:80px 20px;
+  background:white;
+}
+.page-header h1{
+  font-size:3rem;
+  margin-bottom:15px;
+}
+section{
+  padding:80px 0;
+}
+.resumecard
+.project-card;
+.lab-card;
+.cert-card;
+.contact-card{
+  background:white;
+  padding:30px;
+  margin-bottom:25px;
+  border-radius:14px;
+  box-shadow;
+  0 10px 25px rgba(0,0,0,.07);
+  transition:0.3s;
+}
+.resume-card:hover,
+.project-card:hover,
+.lab-card:hover;
+.cert:card:hover,{
+  trnsform:translateY(-5px);
+}
+.btn{
+  display:inline-block;
+  padding:14px 24px;
+  background:var(--secondary);
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+}
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:25px;
+}
+@media print {
+
+header,
+footer,
+nav,
+.btn{
+display:none;
+}
+
+body{
+background:white;
+}
+
+section{
+padding:20px;
+}
+
+.resume-card,
+.project-card,
+.lab-card{
+
+box-shadow:none;
+border:1px solid #ccc;
+}
+
+}
