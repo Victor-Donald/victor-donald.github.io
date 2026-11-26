@@ -1,102 +1,130 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Home Labs | Victor Donald</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="container">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Victor Donald</a>
 
-<div class="logo">
-Victor Donald
-</div>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="homelabs.html" aria-current="page">Home Labs</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<nav>
+  <main class="container">
+    <div class="page-header">
+      <h1>IT Home Labs</h1>
+      <p>Virtualized and bare-metal enterprise environments built to test identity, networking, and endpoint administration.</p>
+    </div>
 
-<ul>
+    <section class="lab-grid" aria-label="Home Lab Environments">
 
-<li><a href="index.html">Home</a></li>
+      <article class="lab-card">
+        <div class="card-header">
+          <span class="badge">Hyper-V / VirtualBox</span>
+          <h2>Windows Server Domain Lab</h2>
+        </div>
+        <p>
+          Simulated an on-premises corporate network with a primary Domain Controller and Windows 10/11 client workstations.
+        </p>
+        <ul class="lab-highlights">
+          <li>Promoted Windows Server to Domain Controller and configured Active Directory Domain Services (AD DS).</li>
+          <li>Managed Organizational Units (OUs), security groups, password policies, and Group Policy Objects (GPOs).</li>
+          <li>Configured forward/reverse DNS lookup zones and DHCP address scopes with static reservations.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Lab technologies">
+          <li>Windows Server</li>
+          <li>Active Directory</li>
+          <li>DNS &amp; DHCP</li>
+          <li>Group Policy</li>
+        </ul>
+      </article>
 
-<li><a href="resume.html">Resume</a></li>
+      <article class="lab-card">
+        <div class="card-header">
+          <span class="badge">Cloud Sandbox</span>
+          <h2>Microsoft 365 &amp; Identity Lab</h2>
+        </div>
+        <p>
+          Sandbox environment dedicated to cloud user lifecycle administration, access security, and Single Sign-On workflows.
+        </p>
+        <ul class="lab-highlights">
+          <li>Provisioned user accounts, assigned licenses, and administered shared mailboxes and Teams policies.</li>
+          <li>Enforced Multi-Factor Authentication (MFA) and tested Self-Service Password Reset (SSPR) flows.</li>
+          <li>Tested SAML 2.0 Single Sign-On and Just-In-Time (JIT) provisioning between Okta and Zendesk.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Lab technologies">
+          <li>Microsoft 365</li>
+          <li>Entra ID</li>
+          <li>Okta SAML SSO</li>
+          <li>MFA &amp; Licensing</li>
+        </ul>
+      </article>
 
-<li><a href="projects.html">Projects</a></li>
+      <article class="lab-card">
+        <div class="card-header">
+          <span class="badge">Virtual Networking</span>
+          <h2>Enterprise Networking Lab</h2>
+        </div>
+        <p>
+          Isolated virtual subnets designed to practice IP addressing, routing, and network troubleshooting diagnostics.
+        </p>
+        <ul class="lab-highlights">
+          <li>Configured NAT, Host-Only, and Internal virtual switches to segment client and server traffic.</li>
+          <li>Verified subnetting, default gateways, DHCP lease renewals, and DNS name resolution across segments.</li>
+          <li>Diagnosed connectivity bottlenecks using PowerShell and Command Prompt utilities (<code>ping</code>, <code>tracert</code>, <code>nslookup</code>, <code>netstat</code>).</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Lab technologies">
+          <li>TCP/IP &amp; Subnetting</li>
+          <li>DNS / DHCP</li>
+          <li>Virtual Switches</li>
+          <li>CLI Diagnostics</li>
+        </ul>
+      </article>
 
-<li><a href="homelabs.html">Home Labs</a></li>
+      <article class="lab-card">
+        <div class="card-header">
+          <span class="badge">Multi-OS &amp; Bare Metal</span>
+          <h2>Virtualization &amp; OS Deployment Lab</h2>
+        </div>
+        <p>
+          Multi-platform workstation lab for testing operating system imaging, recovery workflows, and snapshot backups.
+        </p>
+        <ul class="lab-highlights">
+          <li>Maintained multi-OS virtual machines across VMware Workstation, Oracle VirtualBox, and QEMU.</li>
+          <li>Configured a dual-boot Linux Mint Cinnamon environment protected with automated Timeshift RSYNC snapshots.</li>
+          <li>Built custom Windows 10/11 recovery images with DISM driver injection and diskpart partitioning.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Lab technologies">
+          <li>VMware &amp; VirtualBox</li>
+          <li>Linux Mint</li>
+          <li>DISM &amp; PowerShell</li>
+          <li>Timeshift Backups</li>
+        </ul>
+      </article>
 
-<li><a href="certifications.html">Certifications</a></li>
+    </section>
+  </main>
 
-<li><a href="contact.html">Contact</a></li>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Victor Donald. All rights reserved.</p>
+    </div>
+  </footer>
 
-</ul>
-
-</nav>
-
-</div>
-
-</header>
-
-<main class="page-header">
-
-<h1>IT Home Labs</h1>
-
-<p>
-
-Hands-on enterprise technology
-environments built for learning.
-
-</p>
-
-</main>
-
-<section class="lab-grid">
-
-<div class="lab-card">
-
-<h2>Windows Server Lab</h2>
-
-<p>
-
-Domain Controller
-
-DNS
-
-DHCP
-
-Active Directory
-
-</p>
-
-</div>
-
-<div class="lab-card">
-
-<h2>Microsoft 365 Lab</h2>
-
-<p>
-
-Administration
-
-User accounts
-
-Licensing
-
-Cloud services
-
-</p>
-
-</div>
-
-<div class="lab-card">
-
-<h2>Networking Lab</h2>
-
-<p>
-
-TCP/IP
-
-DNS
-
-DHCP
-
-Virtual Networking
-
-</p>
-
-</div>
-
-</section>
+</body>
+</html>
