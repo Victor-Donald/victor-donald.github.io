@@ -1,100 +1,133 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Victor Donald</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="container">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Victor Donald</a>
 
-<div class="logo">
-Victor Donald
-</div>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html" aria-current="page">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="homelabs.html">Home Labs</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<nav>
+  <main class="container">
+    <div class="page-header">
+      <h1>Professional Resume</h1>
+      <p>Experience, education, certifications, and technical qualifications.</p>
+      <a class="btn btn-primary" href="IT-Support-Resume.pdf" target="_blank" rel="noopener noreferrer" download>
+        Download PDF Resume
+      </a>
+    </div>
 
-<ul>
+    <section class="resume-section" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Professional Summary</h2>
+      <p>
+        Detail-oriented IT Support and Customer Operations professional with hands-on experience in 
+        Tier 1 Help Desk operations, Microsoft 365, Active Directory, Windows troubleshooting, virtual 
+        desktop infrastructure (AWS WorkSpaces), and high-volume end-user technical support.
+      </p>
+    </section>
 
-<li><a href="index.html">Home</a></li>
+    <section class="resume-section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
 
-<li><a href="resume.html">Resume</a></li>
+      <article class="resume-card">
+        <div class="card-header">
+          <div>
+            <h3>Customer Service Representative <span class="badge">Contract via Robert Half</span></h3>
+            <p class="company">Winston Benefits — Remote</p>
+          </div>
+          <span class="date">Oct 2025 – Nov 2025</span>
+        </div>
+        <ul>
+          <li>Troubleshot online benefits platform access, multi-factor authentication, password resets, and portal navigation issues for end users.</li>
+          <li>Documented user interactions, resolution steps, and escalations accurately within enterprise CRM systems.</li>
+        </ul>
+      </article>
 
-<li><a href="projects.html">Projects</a></li>
+      <article class="resume-card">
+        <div class="card-header">
+          <div>
+            <h3>Health Information Technician</h3>
+            <p class="company">Precision Wellness — Remote</p>
+          </div>
+          <span class="date">Sep 2023 – Apr 2024</span>
+        </div>
+        <ul>
+          <li>Supported Amazon WorkSpaces virtual desktop deployment and resolved end-user Bluetooth and peripheral connectivity issues.</li>
+          <li>Implemented biometric fingerprint login templates and designed a web-based symptom and disease reference database.</li>
+        </ul>
+      </article>
 
-<li><a href="homelabs.html">Home Labs</a></li>
+      <article class="resume-card">
+        <div class="card-header">
+          <div>
+            <h3>IT Tier 1 Help Desk Technician</h3>
+            <p class="company">DeVry University — Washington, D.C.</p>
+          </div>
+          <span class="date">Oct 2010 – Dec 2012</span>
+        </div>
+        <ul>
+          <li>Resolved hardware, software, printer, and network connectivity issues for 20 to 49 campus users daily.</li>
+          <li>Logged, tracked, and escalated support tickets in BMC Remedy while maintaining clear communication with students and faculty.</li>
+        </ul>
+      </article>
+    </section>
 
-<li><a href="certifications.html">Certifications</a></li>
+    <section class="resume-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Core Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Operating Systems &amp; Virtualization</h3>
+          <p>Windows 10/11, Windows Server, Linux Mint, macOS, VirtualBox, VMware Workstation, QEMU, AWS WorkSpaces</p>
+        </div>
+        <div class="skill-group">
+          <h3>Identity &amp; Administration</h3>
+          <p>Active Directory, Microsoft 365, Okta SAML SSO, Jamf / Apple Business Manager, PowerShell, Command Prompt, Terminal</p>
+        </div>
+        <div class="skill-group">
+          <h3>Support &amp; Ticketing</h3>
+          <p>BMC Remedy, Zendesk, Remote Desktop Support, Hardware Diagnostics, SSD &amp; Imaging Deployment</p>
+        </div>
+      </div>
+    </section>
 
-<li><a href="contact.html">Contact</a></li>
+    <section class="resume-section" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <ul class="education-list">
+        <li>
+          <strong>Graduate Certificate in Cybersecurity</strong> — Keller Graduate School of Management <span>(Expected Feb 2027)</span>
+        </li>
+        <li>
+          <strong>Master of Information Systems Management</strong> — Keller Graduate School of Management <span>(Jun 2024)</span>
+        </li>
+        <li>
+          <strong>Bachelor of Science in Network and Communication Management</strong> — DeVry University <span>(Jun 2012)</span>
+        </li>
+      </ul>
+    </section>
+  </main>
 
-</ul>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Victor Donald. All rights reserved.</p>
+    </div>
+  </footer>
 
-</nav>
-
-</div>
-
-</header>
-<main class="page-header">
-
-<h1>Professional Resume</h1>
-
-<p>
-Experience, education, certifications,
-and technical qualifications.
-</p>
-
-</main>
-
-<section class="resume-section">
-
-<h2>Professional Summary</h2>
-
-<p>
-
-IT Support professional with experience
-in Microsoft 365, Active Directory,
-Help Desk operations, troubleshooting,
-Windows Server, and customer support.
-
-</p>
-
-</section>
-
-<section class="resume-section">
-
-<h2>Experience</h2>
-
-<div class="resume-card">
-
-<h3>Tier 1 Help Desk Technician</h3>
-<p>DeVry University</p>
-
-</div>
-
-<div class="resume-card">
-
-<h3>Customer Service Representative</h3>
-<p>Winston Benefits</p>
-
-</div>
-
-</section>
-
-<section class="resume-section">
-
-<h2>Education</h2>
-
-<ul>
-
-<li>Graduate Certificate Cybersecurity</li>
-
-<li>MS Business Administration</li>
-
-<li>BS Network Communication & Management</li>
-
-</ul>
-
-</section>
-
-<section class="resume-section">
-
-<a class="btn" href="IT-Support-Resume.pdf">
-Download IT Resume
-</a>
-
-</section>
+</body>
+</html>
