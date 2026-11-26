@@ -1,86 +1,134 @@
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Portfolio | Victor Donald</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="container">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Victor Donald</a>
 
-<div class="logo">
-Victor Donald
-</div>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="homelabs.html">Home Labs</a></li>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<nav>
+  <main class="container">
+    <div class="page-header">
+      <h1>Technical Portfolio</h1>
+      <p>Hands-on projects demonstrating enterprise identity, cloud administration, and endpoint troubleshooting.</p>
+    </div>
 
-<ul>
+    <section class="projects-grid" aria-label="Featured Technical Projects">
 
-<li><a href="index.html">Home</a></li>
+      <article class="project-card">
+        <div class="project-header">
+          <span class="badge">Identity &amp; Infrastructure</span>
+          <h2>Active Directory Domain Deployment</h2>
+        </div>
+        <p>
+          Built and configured a Windows Server Active Directory Domain Services (AD DS) environment 
+          to simulate enterprise user lifecycle management and access control.
+        </p>
+        <ul class="project-highlights">
+          <li>Designed a structured Organizational Unit (OU) hierarchy across departments and roles.</li>
+          <li>Provisioned user accounts, security groups, and Group Policy Objects (GPOs) for password complexity and drive mapping.</li>
+          <li>Verified DNS resolution and domain-joined client authentication workflows.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Technologies used">
+          <li>Windows Server</li>
+          <li>Active Directory</li>
+          <li>Group Policy (GPO)</li>
+          <li>DNS</li>
+        </ul>
+      </article>
 
-<li><a href="resume.html">Resume</a></li>
+      <article class="project-card">
+        <div class="project-header">
+          <span class="badge">Cloud Administration</span>
+          <h2>Microsoft 365 Tenant Administration</h2>
+        </div>
+        <p>
+          Administered a cloud productivity tenant covering user onboarding, license allocation, 
+          and security baseline configuration.
+        </p>
+        <ul class="project-highlights">
+          <li>Managed user accounts, shared mailboxes, and distribution lists in the Microsoft 365 Admin Center.</li>
+          <li>Assigned subscription licenses and enforced Multi-Factor Authentication (MFA) policies.</li>
+          <li>Configured self-service password reset (SSPR) workflows to reduce Tier 1 ticket volume.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Technologies used">
+          <li>Microsoft 365</li>
+          <li>Entra ID</li>
+          <li>MFA &amp; SSPR</li>
+          <li>Exchange Online</li>
+        </ul>
+      </article>
 
-<li><a href="projects.html">Projects</a></li>
+      <article class="project-card">
+        <div class="project-header">
+          <span class="badge">SSO &amp; Endpoint Management</span>
+          <h2>Okta SAML SSO &amp; MDM Integration</h2>
+        </div>
+        <p>
+          Integrated cloud identity federation and mobile device enrollment workflows to streamline 
+          zero-touch provisioning and help desk authentication.
+        </p>
+        <ul class="project-highlights">
+          <li>Configured Okta SAML 2.0 Single Sign-On and Just-In-Time (JIT) user provisioning with Zendesk.</li>
+          <li>Tested Automated Device Enrollment (ADE) profiles linking Apple Business Manager with Jamf.</li>
+          <li>Validated end-to-end authentication logs and attribute mappings during sign-in testing.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Technologies used">
+          <li>Okta</li>
+          <li>SAML 2.0 / JIT</li>
+          <li>Zendesk</li>
+          <li>Jamf &amp; ABM</li>
+        </ul>
+      </article>
 
-<li><a href="homelabs.html">Home Labs</a></li>
+      <article class="project-card">
+        <div class="project-header">
+          <span class="badge">Desktop Support &amp; Recovery</span>
+          <h2>Windows Diagnostics &amp; Recovery Runbook</h2>
+        </div>
+        <p>
+          Authored standardized Tier 1 troubleshooting guides and executed bare-metal OS recovery 
+          and hardware upgrades across multiple Windows endpoints.
+        </p>
+        <ul class="project-highlights">
+          <li>Documented step-by-step resolution procedures for network drops, BSOD errors, and driver conflicts.</li>
+          <li>Deployed custom Windows 10/11 recovery images and injected device drivers using DISM and PowerShell.</li>
+          <li>Performed M.2 2230 NVMe SSD upgrades and system verification across Surface Pro devices.</li>
+        </ul>
+        <ul class="tech-tags" aria-label="Technologies used">
+          <li>Windows 10 / 11</li>
+          <li>PowerShell &amp; DISM</li>
+          <li>Hardware Diagnostics</li>
+          <li>KB Documentation</li>
+        </ul>
+      </article>
 
-<li><a href="certifications.html">Certifications</a></li>
+    </section>
+  </main>
 
-<li><a href="contact.html">Contact</a></li>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Victor Donald. All rights reserved.</p>
+    </div>
+  </footer>
 
-</ul>
-
-</nav>
-
-</div>
-
-</header>
-<main class="page-header">
-
-<h1>Technical Portfolio</h1>
-
-<p>
-Technical projects demonstrating
-real-world IT skills.
-</p>
-
-</main>
-
-<section>
-
-<div class="project-card">
-
-<h2>Active Directory Project</h2>
-
-<p>
-
-Created users, groups,
-organizational units,
-and domain services.
-
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h2>Microsoft 365 Administration</h2>
-
-<p>
-
-User management,
-licensing,
-and cloud administration.
-
-</p>
-
-</div>
-
-<div class="project-card">
-
-<h2>Windows Troubleshooting</h2>
-
-<p>
-
-Documented common support
-and troubleshooting scenarios.
-
-</p>
-
-</div>
-
-</section>
+</body>
+</html>
